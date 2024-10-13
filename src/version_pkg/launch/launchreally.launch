@@ -1,0 +1,7 @@
+<launch>
+     <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+       <param name="camera_info_url" value="file://$(find version_pkg)/config/camera_calibration.yaml"/>
+     </include> 
+    <node name="object_detection_node" pkg="version_pkg" type="inference.py" output="screen"/>
+    <node name="clip_node" pkg="version_pkg" type="clip_node.py" output="screen"/>
+</launch>

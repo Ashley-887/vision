@@ -54,9 +54,9 @@ class CameraNode:
                 rospy.loginfo("Published color image.")
 
                 # 模拟发布深度图像（假设有深度摄像头）
-                # depth_image_msg = self.bridge.cv2_to_imgmsg(depth_frame, encoding="passthrough")
-                # self.depth_image_pub.publish(depth_image_msg)
-                # rospy.loginfo("Published depth image.")
+                #depth_image_msg = self.bridge.cv2_to_imgmsg(depth_frame, encoding="passthrough")
+                #self.depth_image_pub.publish(depth_image_msg)
+                #rospy.loginfo("Published depth image.")
 
                 # 发布相机内参（假设使用静态参数）
                 self.publish_camera_info()
